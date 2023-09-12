@@ -67,15 +67,19 @@
         </DxGroupItem>
       </DxForm>
     </div>
+    {{ productos }}
   </v-card>
 
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import {  DxForm, DxSimpleItem, DxGroupItem, DxTabbedItem, DxTabPanelOptions, DxTab, } from 'devextreme-vue/form';
 //import service from './data.js';
 import 'devextreme-vue/text-area';
+
+import axios from 'axios'
+const productos = ref([]);
 
 const employee = {
       ID: 1,
@@ -95,6 +99,20 @@ const employee = {
       Skype: 'jheart_DX_skype',
 };
 
+const axiosConfig = {
+   headers: {
+      Authorization: "Bearer " + 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6Imx1aXNAZ21haWwuY29tIiwidXNlck5NIjoibHVpcyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJsdWlzR29uemFsZXoiLCJ1c2VySWQiOiIxIiwiZW1wbG95ZWVJZCI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOlsiQWRtaW4iLCJQZXJtaXNzaW9ucy5Qcm9kdWN0cy5WaWV3IiwiUGVybWlzc2lvbnMuUHJvZHVjdHMuQWRkIl0sImp0aSI6ImZlZjkwMWFjLWY0ZTMtNDEyNS04ODAwLTM5NWM5YzgxNWJmNCIsImV4cCI6MTY5NDU4ODk5M30._NQob_tPD6eVOl_toGkE_D5cflStvE_C3IbKbZhfZyI'
+   }
+}
+
+onMounted(() => {
+    axios.get("http://localhost:4000/api/producto",axiosConfig)
+        .then((response) => {
+            productos.value = response.data.data;
+            console.log(response.data.data);
+        });
+})
+
 </script>
 <style scoped>
 #form-container {
@@ -110,7 +128,7 @@ const employee = {
     'Trebuchet MS',
     Verdana;
   font-weight: 200;
-  font-size: 28px;
+  font-size: 25px;
   text-align: center;
   margin-bottom: 20px;
 }

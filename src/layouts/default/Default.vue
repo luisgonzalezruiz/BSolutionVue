@@ -26,7 +26,7 @@
 
       <v-divider class="border-opacity-75" color="orange"></v-divider>
 
-<!--
+
       <v-list density="compact" nav>
         <v-list-item prepend-icon="mdi-view-dashboard"  :to="{name:'Home'}" title="Home" value="home"></v-list-item>
         <v-list-item prepend-icon="mdi-forum" title="About" value="about"></v-list-item>
@@ -37,7 +37,7 @@
         <v-list-item prepend-icon="mdi-pencil" :to="{name:'empleados'}" title="Empleados" value="empleados"></v-list-item>
 
       </v-list>
--->
+
 
 
 

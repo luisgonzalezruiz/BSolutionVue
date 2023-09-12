@@ -1,10 +1,10 @@
 <template>
-  <v-card color="#ecf0f1" border="">
+  <v-card color="" border="">
     <v-row>
       <v-col>
           <div class="dx-fieldset">
             <div class="dx-field">
-              <div class="dx-field-label">Default mode</div>
+              <div class="dx-field-label" style="color:black">Default mode</div>
               <div class="dx-field-value">
                 <DxTextBox
                   value="John Smith"
@@ -16,6 +16,7 @@
               <div class="dx-field-label">With placeholder</div>
               <div class="dx-field-value">
                 <DxTextBox
+                  style=""
                   placeholder="Enter full name here..."
                   :input-attr="{ 'aria-label': 'Full Name' }"
                 />
@@ -204,3 +205,8 @@
 */
 
 </script>
+<style scoped>
+.dx-field-label {
+  color: black;
+}
+</style>
