@@ -15,7 +15,7 @@
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-divider class="border-opacity-75" color="orange"></v-divider>
+
 
 
     <v-navigation-drawer app  v-model="drawer" fixed color="#ecf0f1">
@@ -37,9 +37,6 @@
         <v-list-item prepend-icon="mdi-pencil" :to="{name:'empleados'}" title="Empleados" value="empleados"></v-list-item>
 
       </v-list>
-
-
-
 
     </v-navigation-drawer>
 
