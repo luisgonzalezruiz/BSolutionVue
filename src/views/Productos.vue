@@ -1,5 +1,4 @@
 <template>
-
   <v-data-table
     density="compact"
     :headers="headers"
