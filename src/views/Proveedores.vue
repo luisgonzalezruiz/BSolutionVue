@@ -207,6 +207,8 @@
 </script>
 <style scoped>
 .dx-field-label {
-  color: black;
+  color: #666666;
+  font-size:12px;
+  font-weight:600;
 }
 </style>
