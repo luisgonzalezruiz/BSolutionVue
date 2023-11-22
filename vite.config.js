@@ -8,8 +8,9 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  publicPath: process.env.PUBLIC_HTML || "",
   plugins: [
-    vue({ 
+    vue({
       template: { transformAssetUrls }
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
@@ -20,7 +21,13 @@ export default defineConfig({
       },
     }),
   ],
-  define: { 'process.env': {} },
+  define: {
+    'process.env': {
+        'URL':'http:\\localhost:2020',
+        'PUBLIC_HTML':''
+    },
+    'process.env.production': {'URL':'http:\\localhost:8080'}
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

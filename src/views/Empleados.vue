@@ -72,7 +72,7 @@
 
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref, onMounted } from 'vue';
 import {  DxForm, DxSimpleItem, DxGroupItem, DxTabbedItem, DxTabPanelOptions, DxTab, } from 'devextreme-vue/form';
 //import service from './data.js';
@@ -80,6 +80,12 @@ import 'devextreme-vue/text-area';
 
 import axios from 'axios'
 const productos = ref([]);
+
+//const RUTA_SERVIDOR = process.env.VITE_APP_RUTA_API;
+const RUTA_SERVIDOR = process.env.URL;
+//const RUTA_SERVIDOR = import.meta.env.VITE_APP_RUTA_AP;
+
+console.log(RUTA_SERVIDOR);
 
 const employee = {
       ID: 1,
