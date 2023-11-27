@@ -42,12 +42,16 @@
             <DxTabPanelOptions
               :defer-rendering="false"
             />
-            <DxTab
-              title="Phone"
-            >
-              <DxSimpleItem
-                data-field="Phone"
-              />
+            <DxTab title="Phone">
+              <DxSimpleItem  data-field="Phone" />
+              <DxGroupItem caption="System Information" >
+                <DxSimpleItem data-field="ID" />
+                <DxSimpleItem data-field="FirstName" />
+                <DxSimpleItem data-field="LastName"  />
+                <DxSimpleItem data-field="HireDate"  />
+                <DxSimpleItem data-field="Position"  />
+                <DxSimpleItem data-field="OfficeNo"  />
+              </DxGroupItem>
             </DxTab>
             <DxTab
               title="Skype"
@@ -66,6 +70,24 @@
           </DxTabbedItem>
         </DxGroupItem>
       </DxForm>
+
+      <dx-button
+        text="Edit"
+        icon="edit"
+        styling-mode="outlined"
+        type="default"
+      />
+
+      <div class="messages">
+          <dx-button
+            icon="belloutline"
+            styling-mode="text"
+          />
+          <div class="dx-badge">
+            4
+          </div>
+        </div>
+
     </div>
     {{ productos }}
   </v-card>
@@ -74,7 +96,9 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { DxButton } from 'devextreme-vue/button';
 import {  DxForm, DxSimpleItem, DxGroupItem, DxTabbedItem, DxTabPanelOptions, DxTab, } from 'devextreme-vue/form';
+
 //import service from './data.js';
 import 'devextreme-vue/text-area';
 
@@ -120,6 +144,7 @@ onMounted(() => {
 })
 
 </script>
+
 <style scoped>
 #form-container {
   margin: 10px;

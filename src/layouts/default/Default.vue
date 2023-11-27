@@ -2,9 +2,9 @@
 
 <v-app>
   <!-- :color="'deep-purple accent-4'" -->
-    <v-app-bar density="compact" dark color="indigo">
+    <v-app-bar density="compact" dark color="white">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title><span>BSolution</span></v-toolbar-title>
+      <v-toolbar-title><span style="color: indigo;">BSolution</span></v-toolbar-title>
       <v-btn class="success">Ingreso</v-btn>
       <v-btn class="error">Salir</v-btn>
 
@@ -30,18 +30,20 @@
       <v-list density="compact" nav>
         <v-list-item prepend-icon="mdi-view-dashboard"  :to="{name:'Home'}" title="Home" value="home"></v-list-item>
         <v-list-item prepend-icon="mdi-forum" title="About" value="about"></v-list-item>
-        <v-list-item prepend-icon="mdi-forum" :to="{name:'about'}" title="Test" value="test"></v-list-item>
+        <v-list-item prepend-icon="mdi-format-align-justify" :to="{name:'about'}" title="Test" value="test"></v-list-item>
         <v-list-item prepend-icon="mdi-plus" :to="{name:'productos'}" title="Productos" value="productos"></v-list-item>
         <v-list-item prepend-icon="mdi-store" :to="{name:'clientes'}" title="Clientes" value="clientes"></v-list-item>
         <v-list-item prepend-icon="mdi-minus" :to="{name:'proveedores'}" title="Proveedores" value="proveedores"></v-list-item>
         <v-list-item prepend-icon="mdi-pencil" :to="{name:'empleados'}" title="Empleados" value="empleados"></v-list-item>
+        <v-list-item prepend-icon="mdi-arrange-bring-forward" :to="{name:'sale_analytic'}" title="Analis de ventas" value="sale_analytic"></v-list-item>
 
       </v-list>
 
     </v-navigation-drawer>
 
  <!-- background-color: #fafafa; -->
-    <v-main class="d-flex align-top justify-center" style="min-height: 300px; background-color: #fafafa;">
+    <v-main class="d-flex align-top justify-center"
+            style="min-height: 300px; ">
       <!-- fluid es para que el contain tome toda la pantalla -->
       <v-container fluid style="padding: 5px;">
           <router-view/>

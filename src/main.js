@@ -6,7 +6,14 @@
 
 //import 'devextreme/dist/css/dx.material.orange.light.compact.css';
 //import 'devextreme/dist/css/dx.carmine.css';
-import 'devextreme/dist/css/dx.carmine.compact.css';
+
+// import 'devextreme/dist/css/dx.carmine.compact.css';
+
+import 'devextreme/dist/css/dx.material.blue.light.compact.css';
+
+
+/* import './styles.scss'; */
+
 
 
 // Components

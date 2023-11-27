@@ -5,6 +5,7 @@ import Productos from '../views/Productos.vue'
 import Clientes from '../views/Clientes.vue'
 import Proveedores from '../views/Proveedores.vue'
 import Empleados from '../views/Empleados.vue'
+import SaleAnalytic from '../views/analytics-sales-report.vue'
 
 const routes = [
   {
@@ -54,6 +55,13 @@ const routes = [
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       { path: '', name: 'empleados',component: Empleados, },
+    ]
+  },
+  {
+    path: '/sale_analytic',
+    component: () => import('@/layouts/default/Default.vue'),
+    children: [
+      { path: '', name: 'sale_analytic',component: SaleAnalytic, },
     ]
   },
 ]
