@@ -89,7 +89,9 @@ const onReorder = (e) => {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+
+@import '@/variables.scss';
 
 #card-tasks {
   min-height: 300px;

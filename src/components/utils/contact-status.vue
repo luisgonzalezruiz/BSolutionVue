@@ -40,8 +40,9 @@ const props = withDefaults(defineProps<{
 }
 </style>
 <style scoped lang="scss">
-@use 'src/variables' as *;
-@use "sass:math";
+//@use 'src/variables' as *;
+@import '@/variables.scss';
+//@use "sass:math";
 
 .contact-status {
   font-size: 13px;

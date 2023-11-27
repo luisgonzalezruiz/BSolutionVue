@@ -16,8 +16,6 @@
       </v-btn>
     </v-app-bar>
 
-
-
     <v-navigation-drawer app  v-model="drawer" fixed color="#ecf0f1">
       <v-list-item
         prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg"
@@ -25,7 +23,6 @@
       </v-list-item>
 
       <v-divider class="border-opacity-75" color="orange"></v-divider>
-
 
       <v-list density="compact" nav>
         <v-list-item prepend-icon="mdi-view-dashboard"  :to="{name:'Home'}" title="Home" value="home"></v-list-item>
@@ -36,6 +33,7 @@
         <v-list-item prepend-icon="mdi-minus" :to="{name:'proveedores'}" title="Proveedores" value="proveedores"></v-list-item>
         <v-list-item prepend-icon="mdi-pencil" :to="{name:'empleados'}" title="Empleados" value="empleados"></v-list-item>
         <v-list-item prepend-icon="mdi-arrange-bring-forward" :to="{name:'sale_analytic'}" title="Analis de ventas" value="sale_analytic"></v-list-item>
+        <v-list-item prepend-icon="mdi-arrange-bring-forward" :to="{name:'crm_contact_detalis'}" title="Contact Details" value="crm_contact_detalis"></v-list-item>
 
       </v-list>
 

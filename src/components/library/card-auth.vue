@@ -23,7 +23,8 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
-@use '@/variables.scss' as *;
+// @use '@/variables.scss' as *;
+@import '@/variables.scss';
 
 .auth-card {
   display: flex;

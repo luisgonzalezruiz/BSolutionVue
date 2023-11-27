@@ -56,7 +56,9 @@ const emit = defineEmits(['editCanceled', 'saveClicked', 'editToggled']);
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+
+@import '@/variables.scss';
 
 .dx-toolbar {
   margin-bottom: var(--toolbar-margin-bottom);

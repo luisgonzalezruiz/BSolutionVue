@@ -7,6 +7,10 @@ import Proveedores from '../views/Proveedores.vue'
 import Empleados from '../views/Empleados.vue'
 import SaleAnalytic from '../views/analytics-sales-report.vue'
 
+import CrmContactDetails from '../views/crm-contact-details.vue'
+
+//import defaultLayout from '@/layouts/side-nav-outer-toolbar.vue';
+
 const routes = [
   {
     path: '/',
@@ -62,6 +66,13 @@ const routes = [
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       { path: '', name: 'sale_analytic',component: SaleAnalytic, },
+    ]
+  },
+  {
+    path: '/crm_contact_detalis',
+    component: () => import('@/layouts/default/Default.vue'),
+    children: [
+      { path: '', name: 'crm_contact_detalis',component: CrmContactDetails, },
     ]
   },
 ]

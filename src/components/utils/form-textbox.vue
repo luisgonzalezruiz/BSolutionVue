@@ -57,7 +57,8 @@ const value = computed({
 });
 </script>
 <style scoped lang="scss">
-@use "@/variables" as *;
+// @use "@/variables" as *;
+@import '@/variables.scss';
 
 .dx-texteditor.form-editor :deep(.form-editor-icon:first-child) {
   margin-left: 0;

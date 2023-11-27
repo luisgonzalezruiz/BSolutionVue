@@ -31,7 +31,8 @@ const buttonStylingMode = computed<DxButtonTypes.ButtonStyle>(() => {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 .oauth-button-container {
   text-align: center;

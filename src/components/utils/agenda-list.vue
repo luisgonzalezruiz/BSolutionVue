@@ -38,7 +38,8 @@ function handleItemClick(
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 .dx-list :deep(.dx-item:not(:first-child)) .agenda-item {
   border-top: solid 1px var(--border-color);

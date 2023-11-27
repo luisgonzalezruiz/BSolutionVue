@@ -230,7 +230,8 @@ function cancelEdit() {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 #contact-form {
   min-height: 300px;

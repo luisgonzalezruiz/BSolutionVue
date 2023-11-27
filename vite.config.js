@@ -30,7 +30,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      'devextreme/ui': 'devextreme/esm/ui'
     },
     extensions: [
       '.js',
@@ -49,6 +50,11 @@ export default defineConfig({
                              @import "@/theme/styles/variables-light.scss";`
         },
     },
+  },
+  build: {
+    rollupOptions: {
+        treeshake:  false 
+    }
   },
   server: {
     port: 3000,

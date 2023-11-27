@@ -50,7 +50,8 @@ defineExpose({ focusList });
 
 </script>
 <style scoped lang="scss">
-@use '@/variables.scss' as *;
+// @use '@/variables.scss' as *;
+@import '@/variables.scss';
 
 .user-info {
   display: flex;

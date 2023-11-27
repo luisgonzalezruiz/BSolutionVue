@@ -96,8 +96,9 @@ function onFieldChange<T extends keyof Profile>(fieldName: T, value: Profile[T])
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
-@use "sass:math";
+//@use "@/variables.scss" as *;
+@import '@/variables.scss';
+//@use "sass:math";
 
 .panel {
   @include shadow();

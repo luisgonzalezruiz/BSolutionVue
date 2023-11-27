@@ -58,7 +58,8 @@ const navigateToDetails = () => {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 @mixin priority($priorety-color) {
   .card-priority {

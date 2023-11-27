@@ -66,7 +66,8 @@ const activityMenuItems: Array<{ text: string }> = [
 ];
 </script>
 <style scoped lang="scss">
-@use '@/variables' as *;
+// @use '@/variables' as *;
+@import '@/variables.scss';
 
 #activities-list {
   padding: 10px;

@@ -44,7 +44,8 @@ const props = withDefaults(defineProps<{
 </script>
 
 <style scoped lang="scss">
-@use "@/variables" as *;
+// @use "@/variables" as *;
+@import '@/variables.scss';
 
 .host {
   position: relative;

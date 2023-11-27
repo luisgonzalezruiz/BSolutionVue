@@ -98,7 +98,8 @@ async function onSubmit() {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables" as *;
+// @use "@/variables" as *;
+@import '@/variables.scss';
 
 .reset-password-form {
   :deep(.submit-button) {

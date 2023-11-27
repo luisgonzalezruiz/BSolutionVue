@@ -65,7 +65,8 @@ function emitChangedValue(changedData: SimpleObject) {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 :global(.pictured-item-select-box-dropdown .pictured-item-image),
 .pictured-item-select-box .pictured-item-image {

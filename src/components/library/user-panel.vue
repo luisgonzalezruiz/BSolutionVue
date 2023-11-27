@@ -59,7 +59,8 @@ function handleDropDownButtonContentReady({ component }: {component: typeof DxDr
 
 </script>
 <style scoped lang="scss">
-@use '@/variables.scss' as *;
+// @use '@/variables.scss' as *;
+@import '@/variables.scss';
 
 .user-panel  {
   display: flex;

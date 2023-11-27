@@ -67,7 +67,9 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
-@use '@/variables.scss' as *;
+// @use '@/variables.scss' as *;
+
+@import '@/variables.scss';
 
 :deep(.card.grid) .content {
   border-top: 1px solid var(--border-color);

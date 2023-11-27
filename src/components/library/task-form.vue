@@ -201,7 +201,9 @@ function handleCancelClick() {
 }
 </script>
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+
+@import '@/variables.scss';
 
 #task-form {
   min-height: 250px;

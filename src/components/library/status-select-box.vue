@@ -64,7 +64,9 @@ function emitChangedValue(changedData: SimpleObject) {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @import '@/variables.scss';@use "@/variables.scss" as *;
+@import '@/variables.scss';
+
 
 .dx-texteditor-with-floating-label .status-editor-field .status-indicator {
   align-self: flex-end;

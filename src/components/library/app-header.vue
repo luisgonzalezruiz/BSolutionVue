@@ -119,7 +119,8 @@ const userMenuItems = [
   }];
 </script>
 <style scoped lang="scss">
-@use "@/variables" as *;
+//@use "@/variables" as *;
+@import '@/variables.scss';
 
 header {
   flex: 0 0 auto;

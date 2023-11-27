@@ -37,7 +37,8 @@ watchEffect(() => {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 .left-side-panel {
   --left-side-panel-width: 320px;

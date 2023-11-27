@@ -63,7 +63,9 @@ function toggleOpen() {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+
+@import '@/variables.scss';
 
 .right-side-panel-wrapper {
   --side-panel-width: calc(var(--calendar-width) + var(--content-padding));

@@ -144,7 +144,8 @@ function confirmPassword(e: {value: ''}) {
 }</script>
 
 <style scoped lang="scss">
-@use "@/variables" as *;
+// @use "@/variables" as *;
+@import '@/variables.scss';
 
 .create-account-form {
   .policy-info {

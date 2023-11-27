@@ -14,7 +14,8 @@ const props = withDefaults(defineProps<{
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 .circle {
   &[data-letters]::before {

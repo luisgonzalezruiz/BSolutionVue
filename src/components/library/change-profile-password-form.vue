@@ -103,7 +103,8 @@ function saveNewPassword() {
 }
 </script>
 <style lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 @include separator();
 

@@ -133,7 +133,9 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables" as *;
+// @use "@/variables" as *;
+
+@import '@/variables.scss';
 
 @include messages-content();
 

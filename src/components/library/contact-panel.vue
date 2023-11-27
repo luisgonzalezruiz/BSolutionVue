@@ -314,7 +314,8 @@ const navigateToDetails = () => {
 </script>
 
 <style lang="scss">
-@use '@/variables' as *;
+// @use '@/variables' as *;
+@import '@/variables.scss';
 
 #contact-panel {
   --contact-side-panel-width: 350px;

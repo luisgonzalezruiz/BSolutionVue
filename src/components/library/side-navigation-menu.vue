@@ -95,7 +95,9 @@ watch(
 </script>
 
 <style scoped lang="scss">
-@use "@/variables" as *;
+// @use "@/variables" as *;
+@import '@/variables.scss';
+
 .side-navigation-menu {
   display: flex;
   flex-direction: column;

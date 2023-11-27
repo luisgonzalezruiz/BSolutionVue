@@ -41,7 +41,8 @@ const totalCount = computed(() => ((props.data as unknown as Array<{[key:string]
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 .tile.card-wrapper {
   :deep(.card) {

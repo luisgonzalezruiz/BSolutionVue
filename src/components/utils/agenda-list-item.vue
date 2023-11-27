@@ -47,7 +47,8 @@ const duration = computed(() => {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+//@use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 .agenda-list-item {
   display: flex;

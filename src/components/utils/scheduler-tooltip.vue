@@ -80,7 +80,8 @@ const emit = defineEmits(['clickEditAppointment', 'clickDeleteAppointment']);
 </script>
 
 <style lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 .dx-tooltip-wrapper > .dx-popup-normal {
   background-color: var(--base-bg) !important;

@@ -127,7 +127,8 @@ const addTask = () => {
 </script>
 
 <style scoped lang="scss">
-@use "@/variables.scss" as *;
+// @use "@/variables.scss" as *;
+@import '@/variables.scss';
 
 .scrollable-board {
   white-space: nowrap;

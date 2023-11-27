@@ -71,7 +71,8 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
-@use '@/variables.scss' as *;
+// @use '@/variables.scss' as *;
+@import '@/variables.scss';
 
 :deep(td.dx-command-adaptive.dx-command-adaptive),
 :deep(td.sales-bullet.sales-bullet) {
