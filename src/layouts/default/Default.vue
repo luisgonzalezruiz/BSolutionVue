@@ -2,9 +2,9 @@
 
 <v-app>
   <!-- :color="'deep-purple accent-4'" -->
-    <v-app-bar density="compact" dark color="white">
+    <v-app-bar density="compact" dark color="blue">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title><span style="color: indigo;">BSolution</span></v-toolbar-title>
+      <v-toolbar-title dark color="white"><span>BSolution</span></v-toolbar-title>
       <v-btn class="success">Ingreso</v-btn>
       <v-btn class="error">Salir</v-btn>
 

@@ -89,10 +89,7 @@ import { onMounted, ref } from 'vue';
 import { DxScrollView } from 'devextreme-vue/scroll-view';
 import { DxButton } from 'devextreme-vue/button';
 import { DxDropDownButton, DxItem as DxDropDownItem } from 'devextreme-vue/drop-down-button';
-import {
-  DxToolbar,
-  DxItem as DxToolbarItem,
-} from 'devextreme-vue/toolbar';
+import {  DxToolbar,  DxItem as DxToolbarItem,} from 'devextreme-vue/toolbar';
 // eslint-disable-next-line import/no-unresolved
 import { getContact } from '@/data'; // 'dx-template-gallery-data';
 import type { Contact } from '@/types/contact';
