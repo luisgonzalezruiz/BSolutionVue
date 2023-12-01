@@ -1,29 +1,22 @@
 <template>
-
 <v-app>
   <!-- :color="'deep-purple accent-4'" -->
     <v-app-bar density="compact" dark color="blue">
       <!-- <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon> -->
       <v-app-bar-nav-icon @click="rail = !rail"></v-app-bar-nav-icon>
-      <v-toolbar-title dark color="white"><span>BSolution</span></v-toolbar-title>
+      <v-toolbar-title dark color="white"><span>BSolution LTE</span></v-toolbar-title>
       <!-- <v-btn class="success">Ingreso</v-btn> -->
       <!-- <v-btn class="error">Salir</v-btn> -->
 
       <template v-slot:append>
-        
         <v-btn icon="mdi-magnify"></v-btn>
 
-        <v-badge :content="18" dark color="orange" sizes="12">
-          <v-icon icon="$vuetify" size="large" dark color="white"></v-icon>
+        <v-badge :content="18" dark color="orange">
+          <v-icon icon="$vuetify" size="large"></v-icon>
         </v-badge>
-        <!--    
-        <v-btn icon>
-          <v-icon>mdi-dots-vertical</v-icon>
-        </v-btn> 
-        -->
 
-          <v-btn icon="mdi-heart"></v-btn>
-          <v-btn icon="mdi-dots-vertical"></v-btn>
+        <v-btn icon="mdi-heart"></v-btn>
+        <v-btn icon="mdi-dots-vertical"></v-btn>
       </template>
 
     </v-app-bar>
@@ -69,8 +62,7 @@
     </v-navigation-drawer>
 
     <!-- background-color: #fafafa; -->
-    <v-main class="d-flex align-top justify-center"
-            style="min-height: 300px; ">
+    <v-main class="d-flex align-top justify-center" style="min-height: 300px; ">
       <!-- fluid es para que el contain tome toda la pantalla -->
       <v-container fluid style="padding: 5px;">
           <router-view/>
