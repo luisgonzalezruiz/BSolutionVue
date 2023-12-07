@@ -29,7 +29,7 @@
         permanent
         @click="rail = false"    
     >
-      <v-list-item
+      <v-list-item 
         prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg"
         title="John Leider"
       >
