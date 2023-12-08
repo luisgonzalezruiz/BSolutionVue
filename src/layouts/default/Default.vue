@@ -1,6 +1,7 @@
 <template>
 <v-app>
   <!-- :color="'deep-purple accent-4'" -->
+  <!-- #03a9f4 -->
     <v-app-bar density="compact" dark color="blue">
       <!-- <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon> -->
       <v-app-bar-nav-icon @click="rail = !rail"></v-app-bar-nav-icon>
@@ -21,27 +22,27 @@
 
     </v-app-bar>
 
-    <v-navigation-drawer 
-        app  
-        v-model="drawer" 
+    <v-navigation-drawer
+        app
+        v-model="drawer"
         fixed color="#ecf0f1"
         :rail="rail"
         permanent
-        @click="rail = false"    
+        @click="rail = false"
     >
-      <v-list-item 
+      <v-list-item
         prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg"
         title="John Leider"
       >
-        <!--    
+        <!--
         <template v-slot:append>
           <v-btn
             variant="text"
             icon="mdi-chevron-left"
             @click.stop="rail = !rail"
           ></v-btn>
-        </template>   
-        -->    
+        </template>
+        -->
 
       </v-list-item>
 
