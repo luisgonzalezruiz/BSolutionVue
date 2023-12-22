@@ -11,7 +11,6 @@
 
       <template v-slot:append>
         <v-btn icon="mdi-magnify"></v-btn>
-
         <v-badge :content="18" dark color="orange">
           <v-icon icon="$vuetify" size="large"></v-icon>
         </v-badge>
